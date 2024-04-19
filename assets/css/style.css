@@ -21,6 +21,17 @@
   outline: none;
   list-style: none;
 }
+@font-face {
+  font-family: "Dune Rise";
+  src: url("/assets/fonts/dunerise/Dune_Rise.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+.font-dune-rise {
+  font-family: "Dune Rise", sans-serif;
+}
 
 body {
   color: #fff;

@@ -9728,6 +9728,14 @@ header.in-box {
   user-select: none;
 }
 
+.border-style {
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.border-right-style {
+  border-right: 1px solid white;
+}
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
   .shop-cart {
     /* Force table to not be like tables anymore */

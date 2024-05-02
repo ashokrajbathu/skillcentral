@@ -1,0 +1,32 @@
+
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,END]    
+
+RewriteRule ^/?index\.html$ /home [R=301,END]
+RewriteRule ^/?home/?$ /index.html [END]
+
+RewriteRule ^/?about\.html$ /about [R=301,END]
+RewriteRule ^/?about/?$ /about.html [END]
+
+RewriteRule ^/?page-contact\.html$ /contact [R=301,END]
+RewriteRule ^/?contact/?$ /page-contact.html [END]
+
+RewriteRule ^/?fullstack-devops-course\.html$ /fullstack-devops-course [R=301,END]
+RewriteRule ^/?fullstack-devops-course/?$ /fullstack-devops-course.html [END]
+
+RewriteRule ^/?advanced-digital-marketing-course\.html$ /advanced-digital-marketing-course [R=301,END]
+RewriteRule ^/?advanced-digital-marketing-course/?$ /advanced-digital-marketing-course.html [END]
+
+RewriteRule ^/?data-analytics-course\.html$ /data-analytics-course [R=301,END]
+RewriteRule ^/?data-analytics-course/?$ /data-analytics-course.html [END]
+
+RewriteRule ^/?machine-learning-course\.html$ /machine-learning-course [R=301,END]
+RewriteRule ^/?machine-learning-course/?$ /machine-learning-course.html [END]
+
+RewriteRule ^/?privacy-policy\.html$ /privacy-policy [R=301,END]
+RewriteRule ^/?privacy-policy/?$ /privacy-policy.html [END]
+
+RewriteRule ^/?terms-and-conditions\.html$ /terms-and-conditions [R=301,END]
+RewriteRule ^/?terms-and-conditions/?$ /terms-and-conditions.html [END]

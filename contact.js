@@ -10,9 +10,9 @@ function submitForm() {
     const howDoYouKnow = document.getElementById('form_howdoyouknow').value;
    
     const requestData = {
-        leadName: name,
+        leadFirstName: name,
         leadEmail: email,
-        leadNumber: number,
+        leadMobileNumber: number,
         leadCollegeName: collegename,
         leadPassedout: passedout,
         leadBranch: branch,
@@ -22,13 +22,10 @@ function submitForm() {
         leadLandingSource: "skillcentral"
     };
    
-    // API endpoint
     const apiUrl = "http://65.0.90.148:5377/content-manager/collection-types/application::lead.lead";
    
-    // Bearer token
     const bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzM3YTRlYTZlNmFiYzAzYmRkNTJjYyIsImlhdCI6MTcxNDY0OTY4MCwiZXhwIjoxNzE3MjQxNjgwfQ.O8WdyoBP9EBHH_n9ZQFcvKr27DRMU5XnHOaJPjM0-xw";
    
-    // Fetch options
     const fetchOptions = {
       method: 'POST',
       headers: {
@@ -38,21 +35,56 @@ function submitForm() {
       body: JSON.stringify(requestData)
     };
    
-    // Making the fetch request
     fetch(apiUrl, fetchOptions)
       .then(response => {
-        // Check if the response is successful
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
-        return response.json(); // Parse the JSON from the response
+        return response.json(); 
       })
       .then(data => {
-        console.log('Response:', data); // Do something with the response data
-        // Optionally, you can reset the form after successful submission
-        document.getElementById('myForm').reset();
+        console.log('Response:', data);
+        document.getElementById('contact-form').reset();
       })
       .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
       });
+}
+
+function validateEmail() {
+  var email = document.getElementById("form_email").value;
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  var emailInput = document.getElementById("form_email");
+  var emailError = document.getElementById("email_error");
+
+  if (emailRegex.test(email)) {
+      emailInput.classList.remove("error");
+      emailError.textContent = ""; // Clear any previous error message
+      console.log("Email is valid");
+      return true;
+  } else {
+      emailInput.classList.add("error");
+      emailError.textContent = "Please enter a valid email"; // Show error message
+      console.log("Email is invalid");
+      return false;
   }
+}
+
+function validateMobile() {
+  var mobile = document.getElementById("form_number").value;
+  var mobileRegex = /^[6-9]\d{9}$/;
+  var mobileInput = document.getElementById("form_number");
+  var mobileError = document.getElementById("mobile_error");
+
+  if (mobileRegex.test(mobile)) {
+      mobileInput.classList.remove("error");
+      mobileError.textContent = ""; // Clear any previous error message
+      console.log("Mobile number is valid");
+      return true;
+  } else {
+      mobileInput.classList.add("error");
+      mobileError.textContent = "Please enter a valid mobile number"; // Show error message
+      console.log("Mobile number is invalid");
+      return false;
+  }
+}

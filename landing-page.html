@@ -178,12 +178,12 @@
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="sec-lg-head mb-80">
-                            <h6 class="dot-titl-non mb-10">Get In Touch</h6>
-                            <h2 class="fz-50">Let's Connect <br> and Collaborate.</h2>
-                            <p class="fz-15 mt-10">If you're interested in exploring internship opportunities or simply want to get in touch, we'd love to hear from you!
+                            <h6 class="dot-titl-non mb-10">SkillCentral</h6>
+                            <h2 class="fz-38">Advanced Training <br>and Internship Program.</h2>
+                            <p class="fz-15 mt-10">Be a part of fastest growing Training + Internship program
                             </p>
                             <div class="phone fz-30 fw-600 mt-30 underline">
-                                <a href="tel:+919010006171">+91 90100 06172</a>
+                                <a href="tel:+919010006172">+91 90100 06172</a>
                             </div>
                             <!-- <ul class="rest social-text d-flex mt-60">
                                 <li class="mr-30">
@@ -216,15 +216,14 @@
 
                                     <div class="col-lg-6">
                                         <div class="form-group mb-30">
-                                            <input id="form_email" type="email" name="email" placeholder="Email"
-                                                required="required">
+                                            <input id="form_email" type="email" name="email" placeholder="Email" required="required" onblur="validateEmail()">
+                                            <span id="email_error" class="error ml-6 mt-2"></span> <!-- Error message placeholder -->
                                         </div>
                                     </div>
-
                                     <div class="col-lg-6">
                                         <div class="form-group mb-30">
-                                            <input id="form_number" type="number" name="number" placeholder="Number"
-                                                required="required">
+                                            <input id="form_number" type="text" name="text" placeholder="Mobile Number" required="required" onblur="validateMobile()">
+                                            <span id="mobile_error" class="error ml-6 mt-2"></span> <!-- Error message placeholder -->
                                         </div>
                                     </div>
 
@@ -251,15 +250,22 @@
 
                                     <div class="col-lg-6">
                                         <div class="form-group mb-30">
-                                            <input id="form_course" type="text" name="course" placeholder="Course Type"
-                                                required="required">
+                                            <select class="course-form" id="form_course" name="course" required="required" style="background: green;">
+                                                <option value="FullStack" selected>FullStack</option>
+                                                <option value="DigitalMarketing">Digital Marketing</option>
+                                                <option value="DataAnalytics">Data Analytics</option>
+                                                <option value="MachineLearning">Machine Learning</option>
+                                            </select>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6">
                                         <div class="form-group mb-30">
-                                            <input id="form_program" type="text" name="program" placeholder="Programme Type"
-                                                required="required">
+                                            <select class="course-form" id="form_program" name="program" required="required">
+                                                <option value="6months" selected>6 months</option>
+                                                <option value="3months">3 months</option>
+                                                <option value="45days">45 days</option>
+                                            </select>
                                         </div>
                                     </div>
 

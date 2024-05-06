@@ -5439,8 +5439,6 @@ body.loaded {
 }
 
 .contact-crev input,
-.contact-crev select,
-.contact-crev option,
 .contact-crev textarea {
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -5454,18 +5452,8 @@ body.loaded {
 }
 
 .contact-crev input:focus,
-.contact-crev select:focus,
-.contact-crev option:focus,
 .contact-crev textarea:focus {
   border-color: #fff;
-}
-
-.course-form{
-  background: transparent !important;
-}
-
-.course-form option{
-  color: black !important;
 }
 
 .contact-crev textarea {

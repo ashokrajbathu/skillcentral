@@ -59,13 +59,11 @@ function validateEmail() {
 
   if (emailRegex.test(email)) {
       emailInput.classList.remove("error");
-      emailError.textContent = ""; // Clear any previous error message
-      console.log("Email is valid");
+      emailError.textContent = "";
       return true;
   } else {
       emailInput.classList.add("error");
-      emailError.textContent = "Please enter a valid email"; // Show error message
-      console.log("Email is invalid");
+      emailError.textContent = "Please enter a valid email";
       return false;
   }
 }
@@ -78,13 +76,11 @@ function validateMobile() {
 
   if (mobileRegex.test(mobile)) {
       mobileInput.classList.remove("error");
-      mobileError.textContent = ""; // Clear any previous error message
-      console.log("Mobile number is valid");
+      mobileError.textContent = "";
       return true;
   } else {
       mobileInput.classList.add("error");
-      mobileError.textContent = "Please enter a valid mobile number"; // Show error message
-      console.log("Mobile number is invalid");
+      mobileError.textContent = "Please enter a valid mobile number";
       return false;
   }
 }

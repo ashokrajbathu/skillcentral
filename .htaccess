@@ -31,8 +31,11 @@ RewriteRule ^/?privacy-policy/?$ /privacy-policy.html [END]
 RewriteRule ^/?terms-and-conditions\.html$ /terms-and-conditions [R=301,END]
 RewriteRule ^/?terms-and-conditions/?$ /terms-and-conditions.html [END]
 
-RewriteRule ^/?landing-page\.html$ /fullstack-internship [R=301,END]
-RewriteRule ^/?fullstack-internship/?$ /landing-page.html [END]
+RewriteRule ^/?fsd-landing-page\.html$ /fullstack-internship [R=301,END]
+RewriteRule ^/?fullstack-internship/?$ /fsd-landing-page.html [END]
+
+RewriteRule ^/?data-analytics-landingpage\.html$ /dataanalytics-internship [R=301,END]
+RewriteRule ^/?dataanalytics-internship/?$ /data-analytics-landingpage.html [END]
 
 RewriteRule ^/?thankyou\.html$ /thanks-for-submitting [R=301,END]
 RewriteRule ^/?thanks-for-submitting/?$ /thankyou.html [END]

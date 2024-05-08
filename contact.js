@@ -22,7 +22,7 @@ function submitForm() {
         leadLandingSource: "skillcentral"
     };
    
-    const apiUrl = "http://65.0.90.148:5377/content-manager/collection-types/application::lead.lead";
+    const apiUrl = "https://crmbackend.websoc.ai/content-manager/collection-types/application::lead.lead";
    
     const bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzM3YTRlYTZlNmFiYzAzYmRkNTJjYyIsImlhdCI6MTcxNDY0OTY4MCwiZXhwIjoxNzE3MjQxNjgwfQ.O8WdyoBP9EBHH_n9ZQFcvKr27DRMU5XnHOaJPjM0-xw";
    

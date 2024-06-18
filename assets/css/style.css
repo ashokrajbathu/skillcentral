@@ -7327,7 +7327,7 @@ body.inter-center {
   line-height: 55px;
   text-align: center;
   border-radius: 50%;
-  background: white;
+  background: white !important;
   color: #1d1d1d;
   font-size: 20px;
   margin-bottom: 30px;
@@ -10791,4 +10791,11 @@ header.in-box {
   }
 }
 
+.backgroundForm{
+  background-color: #1D1D1D !important;
+}
+.borderRadius{
+  border-radius: 40px !important;
+  /* background-color: transparent */
+}
 /* ====================== [ End Responsive ] ====================== */

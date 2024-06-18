@@ -35,12 +35,26 @@
     <!-- Canonical Tag -->
     <link rel="canonical" href="https://skillcentral.websoc.ai/" />
 
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSXP9ZF9E6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-DSXP9ZF9E6');
+    </script>
+
     <!-- Google Tag Manager -->
     <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-5HQ2GSRF');
     </script>
     <!-- End Google Tag Manager -->
@@ -49,11 +63,9 @@
 <body class="main-bg">
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5HQ2GSRF" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5HQ2GSRF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
+    
 
     <!-- ==================== Start Loading ==================== -->
 
@@ -113,7 +125,7 @@
             <div class="collapse navbar-collapse justify-content-end mt-20 mb-20" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item mr-20">
-                        <div class="phone fz-15 underline"><a href="">Talk to Our Career Experts</a></div>
+                        <div class="phone fz-15 underline"><a data-toggle="modal" data-target="#myModal" onclick="applyNowModal()">Talk to Our Career Experts</a></div>
                     </li>
                     <li class="nav-item">
                         <div class="phone fz-15 underline"><a href="tel:+919010006171">+91 90100 06171</a>
@@ -127,6 +139,72 @@
 
     <!-- ==================== End Navbar ==================== -->
 
+    <!-- ========   modal ========-->  
+    
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal" style="margin-top: 3%;">
+        <div class="modal-dialog ">
+            <div class="modal-content" style="background-color: #1D1D1D; border: transparent;">
+    
+                <!-- Modal body -->
+                <div class="modal-body backgroundForm" style=" border-radius: 30px;" >
+                    <div class="full-width ">
+                        <form id="popup_contact-form" onsubmit="submitPopForm(event)" method="post"  ><!-- method="post" action="#" -->
+                            <div class="row p-2">
+                                <div class="col-lg-10  fw-80 fs-100"><a data-toggle="modal" data-target="#myModal" onclick="applyNowModal()">Let's Connect</a></h4></div>
+                                <div class="col-lg-2">
+                                    <button type="button" class="close btn btn-success mb-2 rounded-circle bg-transparent border border-dark" data-dismiss="modal">&times;</button>
+                                </div>
+                            </div>
+                            <div class="controls row ">
+
+                                <div class="row">
+                                    <div class="form-group mb-30">
+                                        <input id="Popup_form_fullname" type="text" name="name" placeholder="Name" onblur="outsideInputForm(event)" onfocus="insideInputForm(event)"
+                                            required="required" class="form-control bg-transparent text-white" style="border-color: #4A4A4A;">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group mb-30">
+                                        <input id="Popup_form_mail" type="email" name="email" placeholder="Email" required="required" onblur="validatePopUpEmail();outsideInputForm(event)" class="form-control bg-transparent text-white" onfocus="insideInputForm(event)" style="border-color: #4A4A4A;">
+                                        <span id="email_errorr" class="errorr ml-6 mt-2" style="display: none;"></span> <!-- Error message placeholder -->
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group mb-15">
+                                        <input id="Popup_form_number"  title="number should be in 6 to 9" type="text" name="text" placeholder="Mobile Number" required="required" onblur=" validatePopUpMobile();outsideInputForm(event)"  onkeyup="validateMobileNumber(event)" maxlength="10" onfocus="insideInputForm(event)" class="form-control bg-transparent text-white" style="border-color: #4A4A4A;">
+                                        <span id="mobile_errorr" class="errorr ml-6 mt-2" style="display: none;"></span> <!-- Error message placeholder -->
+                                        <span id="number_format" class=" ml-6 mt-2" style="display: none;"></span>
+                                    </div>
+                                </div>
+
+                                
+
+                                <div class="col-12 p-2">
+                                    <div class="mt-15 ">
+                                        <button type="submit" class="butn butn-md butn-bord radius-30 p-2 " style="margin-left: 1.5%;">
+                                            <span class="text" class="form-control">Submit</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    
+                <!-- Modal footer -->
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div> -->
+    
+            </div>
+        </div>
+    </div>
+
+     <!-- ======== modal end -->
+
     <main>
 
         
@@ -138,11 +216,11 @@
                     <div class="col-lg-5">
                         <div class="sec-lg-head mb-80">
                             <h6 class="dot-titl-non mb-10">FullStack Devops offline Training</h6>
-                            <h2 class="fz-28 mt-20 ">Advanced FullStack + DevOps Training in Hyderabad<br>with Hands On Internship & Career Placement Support </h2>
+                            <h2 class="fz-28 mt-20 ">Advanced FullStack + DevOps Training in Hyderabad <br> with Hands On Internship & Career Placement Support </h2>
                             <p class="fz-15 mt-10">Master HTML, CSS, JavaScript, React.js, Next.js, Databases, and More Through Real-Time Project Experiences
                             </p>
                             <div class="fz-16 fw-400 mt-40 ">
-                                <button type="submit" class="butn butn-md radius-30">
+                                <button type="submit" class="butn butn-md radius-30" data-toggle="modal" data-target="#myModal">
                                     <span class="text">Download Brochure</span>
                                 </button>
                             </div>
@@ -165,7 +243,7 @@
                     <div class="col-lg-6 offset-lg-1 valign">
                         <div class="full-width">
                             <h4>Book A Demo!</h4>
-                            <form id="contact-form" onsubmit="submitForm()" method="post" action="#">
+                            <form id="contact-form" onsubmit="submitForm()" method="post">
 
                                 <div class="controls row">
 
@@ -210,6 +288,19 @@
                                         </div>
                                     </div>
 
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <input id="form_city" type="text" name="city" placeholder="City"
+                                                required="required">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-30">
+                                            <input id="form_highestQualification" type="text" name="highestQualification" placeholder="HighestQualification"
+                                                required="required">
+                                        </div>
+                                    </div>
                                     <div class="col-lg-6">
                                         <div class="form-group mb-30">
                                             <select class="course-form" id="form_course" name="course" required="required" style="width: 100%; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 10px; background: transparent; color: #fff; padding: 15px; -webkit-transition: all .4s; -o-transition: all .4s; transition: all .4s;">
@@ -257,51 +348,42 @@
 
         <!-- ==================== End Contact ==================== -->
 
-        <!-- ==================== Start process ==================== -->
 
-        <section class="process section-padding pt-0">
-            <div class="container">
-                <div class="row md-marg align-center">
-                    <div class="col-lg col-md-4 col-sm-6">
-                        <div class="item md-mb50">
-                            <span class="icon"><i class="fas fa-clock"></i></span>
-                            <h5 class="fz-14">3 & 6 Months Duration</h5>
-                            <!-- <p class="fz-14">Enterprises definition is an project or undertaking that</p> -->
-                        </div>
-                    </div>
-                    <div class="col-lg col-md-4 col-sm-6">
-                        <div class="item md-mb50">
-                            <span class="icon"><i class="fas fa-project-diagram"></i></span>
-                            <h5 class="fz-14">Real- World Projects</h5>
-                            <!-- <p class="fz-14">Enterprises definition is an project or undertaking that</p> -->
-                        </div>
-                    </div>
-                    <div class="col-lg col-md-4 col-sm-6">
-                        <div class="item md-mb50">
-                            <span class="icon"><i class="fas fa-laptop-code"></i></span>
-                            <h5 class="fz-14">Hands on Training</h5>
-                            <!-- <p class="fz-14">Enterprises definition is an project or undertaking that</p> -->
-                        </div>
-                    </div>
-                    <div class="col-lg col-md-4 col-sm-6">
-                        <div class="item sm-mb50">
-                            <span class="icon"><i class="fas fa-cog"></i></span>
-                            <h5 class="fz-14">Corporate Environment</h5>
-                            <!-- <p class="fz-14">Enterprises definition is an project or undertaking that</p> -->
-                        </div>
-                    </div>
-                    <div class="col-lg col-md-4 col-sm-6">
-                        <div class="item">
-                            <span class="icon"><i class="fas fa-users"></i></span>
-                            <h5 class="fz-14"> F2F Classroom Learning</h5>
-                            <!-- <p class="fz-14">Enterprises definition is an project or undertaking that</p> -->
+        <!-- ==================== Start Services ==================== -->
+
+        <section class="services section-paddingg pb-0 bg-gray1 position-re o-hidden radius-30">
+            <div class="intro-feat section-paddingg ontop">
+                <div class="container section-paddingg pb-0">
+                    <div class="process-crev">
+                        <div class="row">
+                            <div class="item col-lg-3 col-md-6">
+                                <h6 class="mb-10">1.</h6>
+                                <h5 class="fw-600">Program Duration</h5>
+                                <p>3 & 6 Months Duration</p>
+                            </div>
+                            <div class="item col-lg-3 col-md-6">
+                                <h6 class="mb-10">2.</h6>
+                                <h5 class="fw-600">Practical Experience</h5>
+                                <p>Real-Time Projects</p>
+                            </div>
+                            <div class="item col-lg-3 col-md-6">
+                                <h6 class="mb-10">3.</h6>
+                                <h5 class="fw-600">Professional Setting</h5>
+                                <p>Corporate Environment</p>
+                            </div>
+                            <div class="item col-lg-3 col-md-6">
+                                <h6 class="mb-10">4.</h6>
+                                <h5 class="fw-600">Interactive Learning</h5>
+                                <p>F2F Classroom Learning</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="bg-pattern bg-img bg-repeat" data-background="assets/imgs/patterns/bg-pattern.png"></div>
         </section>
 
-        <!-- ==================== End process ==================== -->
+        <!-- ==================== End Services ==================== -->
 
         <!-- ==================== Start Block ==================== -->
 
@@ -350,7 +432,7 @@
                                     <div class="skill-item">
                                         <h5 class="fz-14 mb-15">Institutes</h5>
                                         <div class="skill-progress">
-                                            <div class="progres" data-value="73%"></div>
+                                            <div class="progres" data-value="45%"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -370,7 +452,7 @@
 
             <!-- ==================== Start Services ==================== -->
 
-            <section class="serv-box section-padding pt-0">
+            <section class="serv-box section-paddingg pt-0">
                 <div class="container mb-0">
                     <div class="sec-lg-head mb-80">
                         <div class="row justify-content-center">
@@ -412,6 +494,7 @@
                                 </div>
                                 <h5 class="mb-20">Back-end and DataBases</h5>
                                 <p>&bullet; RESTful API</p>
+                                <p>&bullet; MySQL</p>
                                 <p>&bullet; MongoDB</p>
                                 <p>&bullet; PostgreSQL</p>
                             </div>
@@ -422,7 +505,8 @@
                                     <img src="assets/imgs/serv-icons/0.png" alt="whychooseus">
                                 </div>
                                 <h5 class="mb-20">Devops and CI/CD</h5>
-                                <p>&bullet; Git and GitHub</p>
+                                <p>&bullet; Git</p>
+                                <p>&bullet; GitHub</p>
                                 <p>&bullet; BitBucket</p>
                                 <p>&bullet; CI/CD</p>
                             </div>
@@ -451,7 +535,7 @@
                     </div>
                 </div> -->
                 <div class="col-lg-12 text-center mb-60">
-                    <h4>An Industry-Oriented Python Full Stack Developer and DevOps Course with Internship Program</h4>
+                    <h4>An Industry-Oriented Full Stack and DevOps Course with Internship Program</h4>
                     <p style="font-size: 25px;">Hyderabad's Leading and Trusted Career-Transforming Program</p>
                 </div>
                 <div class="swiper4" data-carousel="swiper" data-items="4" data-space="0"
@@ -779,14 +863,14 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-9">
                         <div class="sec-head text-center mb-80">
-                            <h4> Key Highlights of SkillCentral<span class="stroke">Full Stack + Devops Course</span></h4>
+                            <h4 class="fz-36"> Key Highlights of SkillCentral<span class="stroke">Full Stack + Devops Course</span></h4>
                         </div>
                     </div>
                 </div>
                 <div class="row md-marg">
                     <div class="col-lg col-md-4 col-sm-6">
                         <div class="item md-mb50">
-                            <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                            <span class="icon"><i class="fas fa-user"></i></span>
                             <h5 class="fz-18">Placement Assistance</h5>
                         </div>
                     </div>
@@ -810,7 +894,7 @@
                     </div>
                     <div class="col-lg col-md-4 col-sm-6">
                         <div class="item">
-                            <span class="icon"><i class="fas fa-user"></i></span>
+                            <span class="icon"><i class="fas fa-tasks"></i></span>
                             <h5 class="fz-18">Instant Doubt Resolution</h5>
                         </div>
                     </div>
@@ -830,7 +914,7 @@
                     </div>
                     <div class="col-lg col-md-4 col-sm-6">
                         <div class="item md-mb50">
-                            <span class="icon"><i class="fas fa-dice-d6"></i></span>
+                            <span class="icon"><i class="fas fa-user-check"></i></span>
                             <h5 class="fz-18">Expert Guidance</h5>
                         </div>
                     </div>
@@ -842,7 +926,7 @@
                     </div>
                     <div class="col-lg col-md-4 col-sm-6">
                         <div class="item">
-                            <span class="icon"><i class="fas fa-sticky-note"></i></span>
+                            <span class="icon"><i class="fas fa-laptop"></i></span>
                             <h5 class="fz-18">Practical Experience</h5>
                         </div>
                     </div>
@@ -888,7 +972,7 @@
                                 <li>Internship Certificate</li>
                                 <li>Industry Standard Currriculum</li>
                             </ul>
-                            <a onclick="scrollToSection('contactus')" target="_blank" class="butn butn-md butn-bord mt-30">
+                            <a target="_blank" class="butn butn-md butn-bord mt-30" data-toggle="modal" data-target="#myModal">
                                 <span>Get Started</span>
                                 <i class="ml-5"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -918,7 +1002,7 @@
                                 <li>Internship Certificate</li>
                                 <li>Industry Standard Currriculum</li>
                             </ul>
-                            <a onclick="scrollToSection('contactus')" target="_blank" class="butn butn-md butn-bord mt-30">
+                            <a target="_blank" class="butn butn-md butn-bord mt-30" data-toggle="modal" data-target="#myModal">
                                 <span>Get Started</span>
                                 <i class="ml-5"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -948,7 +1032,7 @@
                                 <li>Internship Certificate</li>
                                 <li>Industry Standard Currriculum</li>
                             </ul>
-                            <a onclick="scrollToSection('contactus')" target="_blank" class="butn butn-md butn-bord mt-30">
+                            <a target="_blank" class="butn butn-md butn-bord mt-30" data-toggle="modal" data-target="#myModal">
                                 <span>Get Started</span>
                                 <i class="ml-5"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -1159,7 +1243,7 @@
                     </div>
                     <div class="col-lg-3 valign">
                         <div class="md-hide">
-                            <a href="page-contact.html" class="hover-this">
+                            <a class="hover-this" data-toggle="modal" data-target="#myModal">
                                 <div class="circle-button in-bord hover-anim">
                                     <div class="rotate-circle fz-30 text-u">
                                         <svg class="textcircle" viewBox="0 0 500 500">
@@ -1345,19 +1429,124 @@
     <footer>
         <div class="footer-containerr">
             <div class="container pb-80 pt-80 ontop">
-                <div class="call-box text-center mb-80">
+                <div class="call-box text-center">
                     <h2>
-                        <a onclick="scrollToSection('contactus')" class="fz-50">Become a <span class="stroke"> Full-Stack Engineer</span></a>
-                        <span class="arrow">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </span>
+                        <a class="fz-50" data-toggle="modal" data-target="#myModal">Become a <span class="stroke">Full-Stack Developer</span></a>
                     </h2>
                 </div>
+                <section class="contact-crev section-padding" id="contactus">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 valign">
+                                <div class="full-width">
+                                    <form id="contact-form" onsubmit="submitForm()" method="post">
+        
+                                        <div class="controls row">
+        
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-30">
+                                                    <input id="form_name" type="text" name="name" placeholder="Name"
+                                                        required="required">
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-30">
+                                                    <input id="form_email" type="email" name="email" placeholder="Email" required="required" onblur="validateEmail()">
+                                                    <span id="email_error" class="error ml-6 mt-2"></span> <!-- Error message placeholder -->
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-30">
+                                                    <input id="form_number" type="text" name="text" placeholder="Mobile Number" required="required" onblur="validateMobile()">
+                                                    <span id="mobile_error" class="error ml-6 mt-2"></span> <!-- Error message placeholder -->
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-30">
+                                                    <input id="form_college" type="text" name="collegename" placeholder="College Name"
+                                                        required="required">
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-30">
+                                                    <input id="form_passedoutyear" type="text" name="passedout" placeholder="Passedout Year"
+                                                        required="required">
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-30">
+                                                    <input id="form_branch" type="text" name="branch" placeholder="Branch"
+                                                        required="required">
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-30">
+                                                    <input id="form_city" type="text" name="city" placeholder="City"
+                                                        required="required">
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-30">
+                                                    <input id="form_highestQualification" type="text" name="highestQualification" placeholder="HighestQualification"
+                                                        required="required">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-30">
+                                                    <select class="course-form" id="form_course" name="course" required="required" style="width: 100%; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 10px; background: transparent; color: #fff; padding: 15px; -webkit-transition: all .4s; -o-transition: all .4s; transition: all .4s;">
+                                                        <option selected value="FullStack" style="color: black;">FullStack</option>
+                                                        <option value="DigitalMarketing" style="color: black;">Digital Marketing</option>
+                                                        <option value="DataAnalytics" style="color: black;">Data Analytics</option>
+                                                        <option value="MachineLearning" style="color: black;">Machine Learning</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-30">
+                                                    <select class="course-form" id="form_program" name="course" required="required" style="width: 100%; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 10px; background: transparent; color: #fff; padding: 15px; -webkit-transition: all .4s; -o-transition: all .4s; transition: all .4s;">
+                                                        <option selected disabled style="color: black;">Course Duration</option>
+                                                        <option value="6months" style="color: black;">6 months</option>
+                                                        <option value="3months" style="color: black;">3 months</option>
+                                                        <option value="45days" style="color: black;">45 days</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-lg-12">
+                                                <div class="form-group mb-30">
+                                                    <input id="form_howdoyouknow" type="text" name="program" placeholder="How do you know about us..?"
+                                                        required="required">
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-12">
+                                                <div class="mt-30">
+                                                    <button type="submit" class="butn butn-md butn-bord radius-30">
+                                                        <span class="text">Submit</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 offset-lg-1 ">
+                                <div class="sec-lg-head mb-80">
+                                    <h2 class="fz-28 mt-90">Ready to level up your tech career...? </h2>
+                                    <p class="fz-16 mt-20">  Let's connect for FullStack + DevOps Training with Hands-On Internship & Career Placement Support and take the next big step together!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="colum md-mb50">
@@ -1400,6 +1589,21 @@
                                 <a href="terms-and-conditions.html">Terms & Conditions</a>
                             </li>
                         </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="tit mb-20">
+                            <h6>Newsletter</h6>
+                        </div>
+                        <div class="subscribe">
+                            <form action="contact.php">
+                                <div class="form-group rest">
+                                    <input type="email" placeholder="Type Your Email">
+                                    <button type="submit">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1450,7 +1654,6 @@
 
     <!-- custom scripts -->
     <script src="assets/js/scripts.js"></script>
-    <script src="contact.js"></script>
 
     <script>
         function scrollToSection(sectionId) {
@@ -1466,7 +1669,35 @@
             selectedOption.style.opacity = '1';
         }
     </script>
-    <script src="fsd-landing-page.js">
+    <script src="fsd-landing-page.js"></script>
+    <script src="landing-page-popup.js"></script>
+
+    <script>
+    document.getElementById('Popup_form_fullname').addEventListener('focus', function() {
+        this.style.boxShadow = 'none';});
+        
+    document.getElementById('Popup_form_mail').addEventListener('focus', function() {
+        this.style.boxShadow = 'none';});
+    
+    document.getElementById('Popup_form_number').addEventListener('focus', function() {
+        this.style.boxShadow = 'none';});
+    
+    
+
+    function insideInputForm(event)
+    {
+        console.log(event.target.id);
+        document.getElementById(event.target.id).style.borderColor='white';
+    }
+
+    function outsideInputForm(event)
+    {
+        document.getElementById(event.target.id).style.borderColor='#4A4A4A';
+    }
+
+    function selectTag(event){
+        document.getElementById(event.target.id).style.color='white';
+    }
 
     </script>
 </body>

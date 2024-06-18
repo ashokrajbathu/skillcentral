@@ -37,12 +37,12 @@ function submitForm() {
         leadCourse: course,
         leadProgram: program,
         leadHowDoYouKnow: howDoYouKnow,
-        leadLandingSource: "skillcentral-dataAnalyticsCoursePage"
+        leadLandingSource: "skillcentral-dataAnalyticsLandingPage"
     };
   
     const apiUrl = "https://crmbackend.websoc.ai/content-manager/collection-types/application::lead.lead";
   
-    const bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzM3YTRlYTZlNmFiYzAzYmRkNTJjYyIsImlhdCI6MTcxNDY0OTY4MCwiZXhwIjoxNzE3MjQxNjgwfQ.O8WdyoBP9EBHH_n9ZQFcvKr27DRMU5XnHOaJPjM0-xw";
+    const bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzM3YTRlYTZlNmFiYzAzYmRkNTJjYyIsImlhdCI6MTcxODM2MjkwNSwiZXhwIjoxNzIwOTU0OTA1fQ.MMH0QQMZD-CUyDP6ss7RLQpsZ1e-6rrNXhuvVXlWmX4";
   
     const fetchOptions = {
         method: 'POST',

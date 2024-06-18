@@ -37,7 +37,7 @@ function submitForm() {
         leadCourse: course,
         leadProgram: program,
         leadHowDoYouKnow: howDoYouKnow,
-        leadLandingSource: "skillcentral-fsdCoursePage"
+        leadLandingSource: "skillcentral-fsdCourseLandingPage"
     };
   
     const apiUrl = "https://crmbackend.websoc.ai/content-manager/collection-types/application::lead.lead";

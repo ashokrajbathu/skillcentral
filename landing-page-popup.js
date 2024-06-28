@@ -378,7 +378,7 @@ function downloadPDF() {
         pdfUrl = 'assets/Brochure/SkillCentral - Full Stack Brochure.pdf';
         fileName = 'SkillCentral - Full Stack Brochure.pdf';
     } 
-    else if (currentUrl.includes('dataanalytics-internship')) {
+    else if (currentUrl.includes('best-data-analytics-training-intership-program-hyderabad') || currentUrl.includes('best-data-analytics')) {
         pdfUrl = 'assets/Brochure/SkillCentral Data Analyst Brochure.pdf';
         fileName = 'SkillCentral - Data Analytics Brochure.pdf';
     }

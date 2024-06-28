@@ -5385,7 +5385,7 @@ body.loaded {
 
 /* Contact
 -----------------------------------------------------------------*/
-.call-action-img .sec-bg-img {
+/* .call-action-img .sec-bg-img {
   height: 450px;
   width: 130%;
   position: relative;
@@ -5458,7 +5458,54 @@ body.loaded {
 
 .contact-crev textarea {
   min-height: 180px;
+} */
+
+
+
+
+.contact-crev .form-group {
+  position: relative;
+  margin-bottom: 40px; /* Increase space to accommodate error messages */
+  height: 40px; /* Fixed height to prevent movement */
 }
+
+.contact-crev .form-group input,
+.contact-crev .form-group select {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  padding: 15px;
+  box-sizing: border-box; /* Ensure padding does not affect width */
+  height: 50px; /* Fixed height for input fields */
+  transition: all 0.4s;
+}
+
+.contact-crev .form-group input:focus,
+.contact-crev .form-group select:focus {
+  border-color: #fff;
+}
+
+
+
+
+.contact-crev .form-group .error-message {
+  color: #55e6a5;
+  font-size: 12px;
+  margin-top: 5px;
+  position: absolute;
+  top: 50px; /* Position below the input field */
+  left: 8px;
+  width: 100%;
+  box-sizing: border-box;
+   /* Ensure error message spans the full width of the input field */
+}
+
+
+
+
+
 
 /* Numbers
 -----------------------------------------------------------------*/
@@ -5848,6 +5895,19 @@ body.loaded {
 -----------------------------------------------------------------*/
 footer {
   position: relative;
+  background-color: black;
+  /* background-color: green; */
+}
+
+footer .data-contact-crev{
+  /* background-color: pink; */
+  padding-bottom: 30px;
+
+}
+footer .fsd-contact-crev{
+  /* background-color: pink; */
+  padding-bottom: 30px;
+
 }
 
 footer .call-box {
@@ -5902,6 +5962,10 @@ footer .subscribe button {
 
 footer .logo a {
   max-width: 120px;
+}
+
+footer .contact-crev{
+  padding-top: 70px;
 }
 
 footer .bg-pattern {
@@ -7327,7 +7391,7 @@ body.inter-center {
   line-height: 55px;
   text-align: center;
   border-radius: 50%;
-  background: white !important;
+  background: #55e6a5 !important;
   color: #1d1d1d;
   font-size: 20px;
   margin-bottom: 30px;
@@ -7381,6 +7445,7 @@ body.inter-center {
 
 .process-crev .row {
   margin-left: -50px;
+  opacity: 0.7;
 }
 
 .process-crev .item {
@@ -7431,6 +7496,16 @@ body.inter-center {
 .serv-intro .img .cont-box svg {
   width: 30px;
   height: 30px;
+}
+
+
+.butn.radius-30:hover .text {
+  color: #55e6a5;
+  text-decoration: underline;
+}
+
+.phone a:hover{
+color: #55e6a5;
 }
 
 .block-serv .content .icon {
@@ -7492,6 +7567,14 @@ body.inter-center {
   padding: 100px 50px;
 }
 
+
+
+.services .intro-feat {
+  opacity: 0.7;
+  /* height: auto; */
+ 
+}
+
 .services .item-bord .arrow svg {
   height: 25px;
   fill: #fff;
@@ -7543,6 +7626,20 @@ body.inter-center {
   display: flex;
 }
 
+.services .metro>h3{
+  
+  padding-left: 23%;
+ 
+  
+}
+.services .metro>p{
+  
+  
+
+}
+
+
+
 .services .metro .items .item {
   min-width: 400px;
   background: #fff;
@@ -7579,6 +7676,10 @@ body.inter-center {
 .serv-box .serv-item {
   padding: 60px 40px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+   height: 90%;
+   box-sizing: border-box;
+   text-justify: auto;
+   text-wrap: wrap;
 }
 
 .serv-box .serv-item .arrow svg {
@@ -8032,7 +8133,7 @@ header.in-box {
 .header-main-crev {
   position: relative;
   overflow: hidden;
-  padding-top: 160px;
+  padding-top: 100px;
 }
 
 .header-main-crev .caption {
@@ -8771,6 +8872,13 @@ header.in-box {
   color: #fff;
   padding: 60px;
   background: #1a1a1a;
+}
+
+
+.testim-vrt .cont div>h2>img{
+  width: 100px;
+  height: auto;
+  padding-bottom: 5px;
 }
 
 .testim-creative .arrows-carsouel {
@@ -10545,6 +10653,9 @@ header.in-box {
     padding: 50px 30px;
     display: block !important;
   }
+
+ 
+
   .serv-box .serv-item .icon-img-80 {
     width: 60px;
     margin-bottom: 30px;
@@ -10799,3 +10910,213 @@ header.in-box {
   /* background-color: transparent */
 }
 /* ====================== [ End Responsive ] ====================== */
+
+
+
+
+
+
+
+
+
+
+.data-serve-box {
+  /* height: 50% !important;
+  background-color:blue !important;
+  color: red; */
+  box-sizing: border-box !important;
+  margin: 0px !important;
+  padding-top:10px !important;
+  padding-bottom: 20px !important;
+}
+
+.fsd-serve-box {
+  /* height: 50% !important;
+  background-color:blue !important;
+  color: red; */
+  box-sizing: border-box !important;
+  margin: 0px !important;
+  padding-top:10px !important;
+  padding-bottom: 20px !important;
+}
+
+
+
+
+
+
+.data-process{
+  
+  margin: 0px !important;
+  padding: 0px !important;
+  box-sizing: border-box !important;
+}
+
+.fsd-process{
+  
+  margin: 0px !important;
+  padding: 0px !important;
+  box-sizing: border-box !important;
+}
+
+
+
+
+
+
+
+
+.data-pricing{
+  margin-top: 40px !important;
+  padding: 0px !important;
+  /* background-color: green; */
+}
+.fsd-pricing{
+  margin-top: 40px !important;
+  padding: 0px !important;
+  /* background-color: green; */
+}
+
+.data-contact{
+  padding-bottom: 50px !important;
+}
+.fsd-contact{
+  padding-bottom: 50px !important;
+}
+
+
+
+@media screen and (max-width:760px) {
+  
+
+  .approach-carso .text-center>p{
+    font-size: 15px !important;
+    text-align: inherit !important;
+  }
+  
+  
+  .approach-carso .text-center>h3{
+    font-size: 30px !important;
+    text-align: center !important;
+    text-wrap: wrap !important;
+    /* text-wrap: wrap; */
+    /* text-align: center; */
+    /* word-wrap: break-word; */
+    /* background-color: blue; */
+  }
+  
+  .data-serve-box div>h3{
+    font-size: 30px !important;
+    text-align: center !important;
+    text-wrap: wrap !important;
+  }
+  .fsd-serve-box div>h3{
+    font-size: 30px !important;
+    text-align: center !important;
+    text-wrap: wrap !important;
+  }
+
+  .data-serve-box div>p{
+    font-size: 15px !important;
+    text-align: inherit !important;
+  }
+  .fsd-serve-box div>p{
+    font-size: 15px !important;
+    text-align: inherit !important;
+  }
+  
+  .data-contact div>h2{
+    font-size: 25px !important;
+    /* background-color: green; */
+  }
+  .fsd-contact div>h2{
+    font-size: 25px !important;
+    /* background-color: green; */
+  }
+  .data-phone{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .fsd-phone{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .data-contact .data-sec-lg-head{
+    /* background-color: green; */
+    margin-bottom: 50px !important;
+  }
+  .fsd-contact .fsd-sec-lg-head{
+    /* background-color: green; */
+    margin-bottom: 50px !important;
+  }
+
+
+  .data-contact .data-img {
+    /* text-align: start; */
+    margin-top: 15px !important;
+    font-size: 20px !important;
+    /* background-color: green; */
+    /* color: red; */
+    }
+
+
+  .fsd-contact .fsd-img {
+    /* text-align: start; */
+    margin-top: 15px !important;
+    font-size: 20px !important;
+    /* background-color: green; */
+    /* color: red; */
+    }
+    
+}
+
+
+
+
+
+.data-contact .data-img {
+/* text-align: start; */
+margin-top: 15px !important;
+}
+
+.fsd-contact .fsd-img {
+/* text-align: start; */
+margin-top: 15px !important;
+}
+
+
+
+
+
+.data-contact .data-img img{
+  height: 50px;
+  width: 50px;
+  /* margin-top: 10px; */
+  /* align-items: center; */
+}
+
+
+.fsd-contact .fsd-img img{
+  height: 50px;
+  width: 50px;
+  /* margin-top: 10px; */
+  /* align-items: center; */
+}
+
+
+
+
+
+
+.fsd-approach-carso{
+
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+
+
+.course-form option{
+  color: black;
+} 

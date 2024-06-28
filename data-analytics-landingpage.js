@@ -62,6 +62,7 @@ function submitForm() {
         })
         .then(data => {
             console.log('Response:', data);
+            downloadPDFDataNavBar()
             document.getElementById('contact-form').reset();
             redirectToThankYouPage(); // Redirect after successful form submission
         })
@@ -105,6 +106,21 @@ function submitForm() {
     }
   }
   
+
+  function downloadPDFDataNavBar() {
+    const pdfUrl = 'assets/Brochure/SkillCentral Data Analyst Brochure.pdf';
+    const fileName = 'SkillCentral Data Analyst Brochure.pdf';
+
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = fileName;
+    link.click();
+}
+
+
+
+
+
   function redirectToThankYouPage() {
    
     window.location.href = 'thankyou.html';

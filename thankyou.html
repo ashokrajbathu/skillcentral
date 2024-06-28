@@ -259,6 +259,16 @@
     <!-- custom scripts -->
     <script src="assets/js/scripts.js"></script>
     <script src="contact.js"></script>
+    <script>
+        // Wait for the document to fully load
+        document.addEventListener("DOMContentLoaded", function(event) {
+            // Set timeout to go back to previous page after 3 seconds
+            setTimeout(function() {
+                window.history.back();
+            }, 3000); // 3000 milliseconds = 3 seconds
+        });
+    </script>
+    
 
 </body>
 

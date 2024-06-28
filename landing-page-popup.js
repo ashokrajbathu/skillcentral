@@ -320,6 +320,8 @@ function submitPopForm(event) {
         .then(data => {
             console.log('Response:', data);
             document.getElementById('popup_contact-form').reset();
+
+            downloadPDF();
             redirectToThankYouPage(); // Redirect after successful form submission
         })
         .catch(error => {
@@ -353,6 +355,68 @@ function validateMobile1(number) {
     return true;
 }
 
+
+// function downloadPDF() {
+//     const pdfUrl = 'assets/Brochure/SkillCentral - Full Stack Brochure.pdf'; // Replace with the actual URL of your PDF
+//     const link = document.createElement('a');
+//     link.href = pdfUrl;
+//     link.download = 'SkillCentral - Full Stack Brochure.pdf'; // Replace with the desired PDF file name
+//     link.click();
+// }
+
+
+
+
+
+function downloadPDF() {
+    let pdfUrl = '';
+    let fileName = '';
+
+    const currentUrl = window.location.href;
+
+    if (currentUrl.includes('fullstack-internship')) {
+        pdfUrl = 'assets/Brochure/SkillCentral - Full Stack Brochure.pdf';
+        fileName = 'SkillCentral - Full Stack Brochure.pdf';
+    } 
+    else if (currentUrl.includes('dataanalytics-internship')) {
+        pdfUrl = 'assets/Brochure/SkillCentral Data Analyst Brochure.pdf';
+        fileName = 'SkillCentral - Data Analytics Brochure.pdf';
+    }
+    else if (currentUrl.includes('digitalmarketing-internship')) {
+        pdfUrl = 'assets/Brochure/SkillCentral Data Analyst Brochure.pdf';
+        fileName = 'SkillCentral - Data Analytics Brochure.pdf';
+    }    
+    else if (currentUrl.includes('machinelearning-internship')) {
+        pdfUrl = 'assets/Brochure/SkillCentral Data Analyst Brochure.pdf';
+        fileName = 'SkillCentral - Data Analytics Brochure.pdf';
+    }    
+    else {
+        // Default brochure or handle other cases
+        pdfUrl = 'assets/Brochure/SkillCentral - Full Stack Brochure.pdf';
+        fileName = 'SkillCentral - Full Stack Brochure.pdf';
+    }
+
+    if (pdfUrl) {
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = fileName;
+        link.click();
+    } else {
+        console.error('No matching brochure found for this URL');
+    }
+}
+
+
+
 function redirectToThankYouPage() {
     window.location.href = 'thankyou.html';
 }
+
+
+
+
+
+
+
+
+

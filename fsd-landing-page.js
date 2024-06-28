@@ -62,6 +62,7 @@ function submitForm() {
         })
         .then(data => {
             console.log('Response:', data);
+            downloadPDFFullStackNavBar()
             document.getElementById('contact-form').reset();
             redirectToThankYouPage(); // Redirect after successful form submission
         })
@@ -104,7 +105,28 @@ function submitForm() {
         return false;
     }
   }
-  
+
+
+
+
+
+  function downloadPDFFullStackNavBar() {
+    const pdfUrl = 'assets/Brochure/SkillCentral - Full Stack Brochure.pdf';
+    const fileName = 'SkillCentral - Full Stack Brochure.pdf';
+
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = fileName;
+    link.click();
+}
+
+
+
+
+
+
+
+
   function redirectToThankYouPage() {
 
     window.location.href = 'thankyou.html';

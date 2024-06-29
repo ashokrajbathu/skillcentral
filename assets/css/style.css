@@ -11056,8 +11056,14 @@ header.in-box {
     /* text-align: start; */
     margin-top: 15px !important;
     font-size: 20px !important;
+    box-sizing: border-box !important;
     /* background-color: green; */
     /* color: red; */
+    }
+  .data-contact .data-img>img {
+    object-fit: contain !important;
+    height: 50px !important;
+    width: 50px !important;
     }
 
 
@@ -11065,10 +11071,39 @@ header.in-box {
     /* text-align: start; */
     margin-top: 15px !important;
     font-size: 20px !important;
+    box-sizing: border-box !important;
     /* background-color: green; */
     /* color: red; */
     }
     
+  .fsd-contact .fsd-img>img {
+    object-fit: contain !important;
+    height: 50px !important;
+    width: 50px !important;
+    }
+    
+    .fsd-testim-vrt .fsd-h2{
+      box-sizing: border-box !important;
+    }
+    .fsd-testim-vrt .fsd-h2>img{
+      object-fit: contain !important;
+      height: 50px !important;
+      width: 50px !important;
+    
+    }
+
+
+    .data-testim-vrt .data-h2{
+      box-sizing: border-box !important;
+    }
+    .data-testim-vrt .data-h2>img{
+      object-fit: contain !important;
+      height: 50px !important;
+      width: 50px !important;
+    
+    }
+
+
 }
 
 
@@ -11078,11 +11113,13 @@ header.in-box {
 .data-contact .data-img {
 /* text-align: start; */
 margin-top: 15px !important;
+box-sizing: border-box !important;
 }
 
 .fsd-contact .fsd-img {
 /* text-align: start; */
 margin-top: 15px !important;
+box-sizing: border-box !important;
 }
 
 
@@ -11090,16 +11127,18 @@ margin-top: 15px !important;
 
 
 .data-contact .data-img img{
-  height: 50px;
-  width: 50px;
+  height: 50px !important;
+  width: 50px !important;
+  object-fit: contain !important;
   /* margin-top: 10px; */
   /* align-items: center; */
 }
 
 
 .fsd-contact .fsd-img img{
-  height: 50px;
-  width: 50px;
+  object-fit: contain;
+  height: 50px !important;
+  width: 50px !important;
   /* margin-top: 10px; */
   /* align-items: center; */
 }
@@ -11120,3 +11159,29 @@ margin-top: 15px !important;
 .course-form option{
   color: black;
 } 
+
+
+
+
+
+
+.fsd-testim-vrt .fsd-h2{
+  box-sizing: border-box !important;
+}
+.fsd-testim-vrt .fsd-h2>img{
+  object-fit: contain !important;
+  height: 50px !important;
+  width: 50px !important;
+
+}
+
+
+.data-testim-vrt .data-h2{
+  box-sizing: border-box !important;
+}
+.data-testim-vrt .data-h2>img{
+  object-fit: contain !important;
+  height: 50px !important;
+  width: 50px !important;
+
+}

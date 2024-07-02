@@ -965,7 +965,11 @@ img {
 
 .main-marq {
   position: relative;
-  padding: 0;
+  
+}
+
+.marque1{
+  background-color: rgb(33, 174, 184);
 }
 
 .main-marq:after {
@@ -5385,7 +5389,7 @@ body.loaded {
 
 /* Contact
 -----------------------------------------------------------------*/
-/* .call-action-img .sec-bg-img {
+ .call-action-img .sec-bg-img {
   height: 450px;
   width: 130%;
   position: relative;
@@ -5405,6 +5409,7 @@ body.loaded {
   height: 100%;
   background: #1a1a1a;
 }
+/*
 
 .call-action-center .bg-pattern {
   position: absolute;
@@ -5414,12 +5419,23 @@ body.loaded {
   height: 100%;
   pointer-events: none;
   z-index: 4;
-}
+}*/
 
 .contact-crev {
   position: relative;
   overflow: hidden;
 }
+/* @media (max-width: 480px) {
+  . call-action-img{
+      transition: none;
+  }
+} */
+@media (max-width: 480px){
+  .footer-container{
+    padding-top: 100px !important;
+  }
+}
+
 
 .contact-crev.no-crev:after {
   display: none;
@@ -5458,7 +5474,7 @@ body.loaded {
 
 .contact-crev textarea {
   min-height: 180px;
-} */
+} 
 
 
 
@@ -7620,7 +7636,7 @@ color: #55e6a5;
 
 .services .metro .items {
   list-style-type: none;
-  gap: 30px;
+  gap: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

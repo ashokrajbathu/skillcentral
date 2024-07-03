@@ -7648,11 +7648,11 @@ color: #55e6a5;
  
   
 }
-.services .metro>p{
+/* .services .metro>p{
   
   
 
-}
+} */
 
 
 
@@ -9863,8 +9863,8 @@ header.in-box {
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
   .shop-cart {
     /* Force table to not be like tables anymore */
-    /* Hide table headers (but not display: none;, for accessibility) */
-  }
+    /* Hide table headers (but not display: none;, for accessibility) 
+  }*/
   .shop-cart table {
     width: 100%;
   }
@@ -11199,5 +11199,5 @@ box-sizing: border-box !important;
   object-fit: contain !important;
   height: 50px !important;
   width: 50px !important;
-
+}
 }

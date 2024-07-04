@@ -62,7 +62,7 @@ function submitForm() {
         })
         .then(data => {
             console.log('Response:', data);
-            downloadPDFFullStackNavBar()
+            // downloadPDFFullStackNavBar()
             document.getElementById('contact-form').reset();
             redirectToThankYouPage(); // Redirect after successful form submission
         })

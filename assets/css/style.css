@@ -398,7 +398,7 @@ img {
 .butn.butn-bord {
   border-color: #fff;
   background: transparent;
-  color: #fff;
+  color:#FFF ;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
@@ -11199,5 +11199,10 @@ box-sizing: border-box !important;
   object-fit: contain !important;
   height: 50px !important;
   width: 50px !important;
+}
+
+.btn-success {
+  background-color: #55e6a5; /* New color */
+  border-color: #55e6a5; /* Border color (if needed) */
 }
 }

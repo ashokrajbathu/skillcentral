@@ -252,6 +252,7 @@ figure {
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 0;
+  align-items: center;
 }
 
 .btn:hover, .btn:focus, .btn:active {
@@ -295,6 +296,7 @@ figure {
 .main-bg {
   background-color: #1d1d1d;
 }
+
 
 .sub-bg {
   background-color: #1a1a1a;

@@ -1410,7 +1410,7 @@ img.left {
 }
 
 .section-padding {
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
 .section-ptb {
@@ -7463,7 +7463,7 @@ body.inter-center {
 
 .process-crev .row {
   margin-left: -50px;
-  opacity: 0.7;
+  /* opacity: 0.7; */
 }
 
 .process-crev .item {
@@ -7587,11 +7587,11 @@ color: #55e6a5;
 
 
 
-.services .intro-feat {
-  opacity: 0.7;
-  /* height: auto; */
+/* .services .intro-feat {
+  opacity: 0.7; */
+  /* height: auto;
  
-}
+} */
 
 .services .item-bord .arrow svg {
   height: 25px;
@@ -11207,4 +11207,15 @@ box-sizing: border-box !important;
   background-color: #55e6a5; /* New color */
   border-color: #55e6a5; /* Border color (if needed) */
 }
+.text-cgange{
+  
+  margin-left: 80px;
+}
+@media only screen and (max-width: 480px) {
+    .courseup{
+      padding-left :0px;
+
+    }
+}
+
 }

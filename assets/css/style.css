@@ -11214,7 +11214,7 @@ box-sizing: border-box !important;
 @media only screen and (max-width: 480px) {
     .courseup{
       padding-left :0px;
-
+      font-size: 20px;
     }
 }
 

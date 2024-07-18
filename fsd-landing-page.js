@@ -2,6 +2,8 @@ function submitForm() {
     const name = document.getElementById('form_name').value;
     const email = document.getElementById('form_email').value;
     const number = document.getElementById('form_number').value;
+    // const alternatenumber = document.getElementById('form_alternatenumber').value;
+
     const collegename = document.getElementById('form_college').value;
     const passedout = document.getElementById('form_passedoutyear').value;
     const branch = document.getElementById('form_branch').value;
@@ -13,6 +15,8 @@ function submitForm() {
     const isNameValid = name.trim() !== '';
     const isEmailValid = validateEmail();
     const isNumberValid = validateMobile();
+    // const isAlternateNumberValid = validateAlternateMobile();
+
     const isCollegenameValid = collegename.trim() !== '';
     const isPassedoutValid = passedout.trim() !== '';
     const isBranchValid = branch.trim() !== '';
@@ -31,6 +35,7 @@ function submitForm() {
         leadFirstName: name,
         leadEmail: email,
         leadMobileNumber: number,
+        // leadAlternateNumber:alternatenumber,
         leadCollegeName: collegename,
         leadPassedout: passedout,
         leadBranch: branch,
@@ -106,6 +111,7 @@ function submitForm() {
     }
   }
 
+ 
 
 
 

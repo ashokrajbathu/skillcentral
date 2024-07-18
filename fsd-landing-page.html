@@ -2,7 +2,6 @@
 <html lang="zxx">
 
 <head>
-
     <!-- Metas -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -219,15 +218,16 @@
                 <div class="row">
                     <div class="col-lg-5 mb-0">
                         <div class="fsd-sec-lg-head sec-lg-head mb-80">
-                            <h6 class="dot-titl-non ">FullStack Devops offline Training</h6>
-                            <h2 class="fz-30 mt-20">Advanced FullStack + DevOps Training in Hyderabad  with Hands On Internship & 100% Career Placement Support </h2>
+                            <h6 class="dot-titl-non "> offline Training</h6>
+                            <h6 class="dot-titl-non "> AI Powered</h6>
+                            <h2 class="fz-25 mt-20">Advanced FullStack + DevOps Training in Hyderabad  with Hands On Internship & <br><span style="color:#55e6a5" class="career">100% Career Placement Guarantee</span> </h2>
                             <p class="fz-15 mt-20">Master HTML, CSS, JavaScript, React.js, Next.js, Databases, and More Through Real-Time Project Experiences</p>
 
-                            <h2 class="fz-20 fsd-img"><img src="./assets/imgs/marquee-images/Google-Photoroom.png" alt="">Total  5k+ Ratings</h2>
+                            <h2 class="fz-20  fsd-h2"><img src="./assets/imgs/marquee-images/Google-Photoroom.png" alt="">Total  5k+ Ratings</h2>
                               
                             <div class="fz-16 fw-400 mt-20">
-                                <button type="submit" class="butn btn-success butn-md radius-30" data-toggle="modal" data-target="#myModal">
-                                    <span class="text">Download Brochure</span>
+                                <button type="submit" class="butn   butn-md radius-30" data-toggle="modal" data-target="#myModal">
+                                    <span  class="text">Download Brochure</span>
                                 </button>
                             </div>
                         </div>
@@ -254,6 +254,13 @@
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <input id="form_number" type="text" name="text" placeholder="Mobile Number" required="required" onblur="validateMobile()">
+                                            <span id="mobile_error" class="error-message"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input id="form_number" type="text" name="text" placeholder=" Alternate Mobile Number" required="required" onblur="validateMobile()">
                                             <span id="mobile_error" class="error-message"></span>
                                         </div>
                                     </div>
@@ -296,10 +303,11 @@
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <select class="course-form" id="form_course" name="course" required="required">
-                                                <option selected value="FullStack" >FullStack</option>
-                                                <option value="DigitalMarketing" >Digital Marketing</option>
-                                                <option value="DataAnalytics" >Data Analytics</option>
-                                                <option value="MachineLearning" >Machine Learning</option>
+                                                <option selected disabled style="color: black;">Program Type</option>
+                                                                <option value="FullStack" style="color: black;">FullStack</option>
+                                                                <option value="DigitalMarketing" style="color: black;">Digital Marketing</option>
+                                                                <option value="DataAnalytics" style="color: black;">Data Analytics</option>
+                                                                <option value="MachineLearning" style="color: black;">Machine Learning</option>
                                             </select>
                                             <span id="course_error" class="error-message"></span>
                                         </div>
@@ -309,8 +317,8 @@
                                         <div class="form-group">
                                             <select class="course-form" id="form_program" name="course" required="required">
                                                 <!-- <option selected disabled style="color: black;">Course Duration</option> -->
-                                                <option value="6months" >4 months</option>
-                                                <option value="3months" selected >3 months</option>
+                                                                <option value="6months" style="color: black;">4 months</option>
+                                                                <option value="3months" style="color: black;">3 months</option>
                                                 <!-- <option value="45days" >45 days</option> -->
                                             </select>
                                             <span id="program_error" class="error-message"></span>
@@ -376,8 +384,8 @@
                             </div>
                             <div class="item col-lg-3 col-md-6">
                                 <h6 class="mb-10"></h6>
-                                <h5 class="fw-600">Professional Setting</h5>
-                                <p>Corporate Environment</p>
+                                <h5 class="fw-600">Job Guarantee</h5>
+                                <p>Mock Interviews</p>
                             </div>
                             <div class="item col-lg-3 col-md-6">
                                 <h6 class="mb-10"></h6>
@@ -403,7 +411,7 @@
                             <div class="item-flex d-flex align-items-center mb-50">
                                 <div>
                                     <div class="icon-img-60">
-                                        <img src="assets/imgs/serv-icons/0.png" alt="whychooseus">
+                                        <img class="google" src="assets/imgs/serv-icons/0.png" alt="whychooseus">
                                     </div>
                                 </div>
                                 <div class="cont ml-50">
@@ -414,7 +422,7 @@
                             <div class="item-flex d-flex align-items-center">
                                 <div>
                                     <div class="icon-img-60">
-                                        <img src="assets/imgs/serv-icons/1.png" alt="whychooseus">
+                                        <img class="google" src="assets/imgs/serv-icons/1.png" alt="whychooseus">
                                     </div>
                                 </div>
                                 <div class="cont ml-50">
@@ -427,7 +435,7 @@
                     <div class="col-lg-6">
                         <div class="cont">
                             <h6 class="sub-title mb-15">Our Value</h6>
-                            <h3 class="mb-15">Placement Comparision<span class="stroke fw-700 opacity-7">Percentage.</span></h3>
+                            <h3  class="mb-15">Placement <span style="color: #55e6a5;" class="rate">Success Rate </span>Comparision</h3>
 
                             <div class="skills mt-50">
                                 <div class="skills-box">
@@ -452,6 +460,7 @@
         </section>
 
         <!-- ==================== End Block ==================== -->
+         
 
         <div class="block-pattern">
 
@@ -473,8 +482,8 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="serv-item md-mb20">
-                                <div class="icon-img-60 mb-40">
-                                    <img src="assets/imgs/serv-icons/0.png" alt="whychooseus">
+                                <div class="icon-img-60  mb-40">
+                                    <img class="google" src="assets/imgs/serv-icons/0.png" alt="whychooseus">
                                 </div>
                                 <h5 class="mb-20">Front-end Fundamentals</h5>
                                 <p>&bullet; HTML</p>
@@ -486,7 +495,7 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="serv-item md-mb20">
                                 <div class="icon-img-60 mb-40">
-                                    <img src="assets/imgs/serv-icons/1.png" alt="whychooseus">
+                                    <img class="google" src="assets/imgs/serv-icons/1.png" alt="whychooseus">
                                 </div>
                                 <h5 class="mb-20">Libraries and Frameworks</h5>
                                 <p>&bullet; TailwindCSS</p>
@@ -498,7 +507,7 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="serv-item sm-mb20">
                                 <div class="icon-img-60 mb-40">
-                                    <img src="assets/imgs/serv-icons/2.png" alt="whychooseus">
+                                    <img class="google" src="assets/imgs/serv-icons/2.png" alt="whychooseus">
                                 </div>
                                 <h5 class="mb-20">Back-end and DataBases</h5>
                                 <p>&bullet; RESTful API</p>
@@ -510,7 +519,7 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="serv-item">
                                 <div class="icon-img-60 mb-40">
-                                    <img src="assets/imgs/serv-icons/0.png" alt="whychooseus">
+                                    <img class="google" src="assets/imgs/serv-icons/0.png" alt="whychooseus">
                                 </div>
                                 <h5 class="mb-20">Devops and CI/CD</h5>
                                 <p>&bullet; Git</p>
@@ -543,8 +552,8 @@
                     </div>
                 </div> -->
                 <div class="fsd-text-center col-lg-12 text-center mb-60 pt-0">
-                    <h3 class="fz-40">An Industry-Oriented Full Stack and DevOps Course with Internship Program</h3>
-                    <p class="fz-20">Hyderabad's Leading and Trusted Career-Transforming Program</p>
+                    <h3 class="fz-35" >An Industry-Oriented Full Stack and DevOps <br>Course with Internship Program</h3><br>
+                    <p class="fz-25"style="color:#55e6a5;">Hyderabad's Leading and Trusted Career-Transforming Program</p>
                 </div>
                 <div class="swiper4" data-carousel="swiper" data-items="4" data-space="0"
                     data-swiper-speed="1000">
@@ -878,8 +887,8 @@
                 <div class="row md-marg">
                     <div class="col-lg col-md-4 col-sm-6">
                         <div class="item md-mb50">
-                            <span class="icon"><i class="fas fa-user"></i></span>
-                            <h5 class="fz-18">Placement Assistance</h5>
+                            <span class="icon"><i class="fas fa-laptop"></i></span>
+                            <h5 class="fz-18">100% Placement Guarantee</h5>
                         </div>
                     </div>
                     <div class="col-lg col-md-4 col-sm-6">
@@ -1662,6 +1671,9 @@
 
         
     </main>
+    <!--marquee-->
+
+   
 
     <!-- ==================== Start Footer ==================== -->
 
@@ -1670,12 +1682,12 @@
             <div class="container pb-30 pt-80 ontop">
                 <div class="call-box text-center">
                     <h2>
-                        <a class="fz-30" data-toggle="modal" data-target="#myModal">Become a <span class="stroke">Full-Stack Developer</span></a>
+                        <a  class="fz-50 " data-toggle="modal" data-target="#myModal">Become a Job-Ready Full Stack Developer!</a>
                     </h2>
                 </div>
                 <section class="fsd-contact-crev contact-crev section-padding" id="contactus">
                     <div class="container">
-                        <div class="row" >
+                        <div class="row " >
                             <div class="col-lg-6 valign">
                                 <div class="full-width">
                                     <form id="contact-form_footer" onsubmit="submitFormFooter(event)" method="post">
@@ -1698,6 +1710,13 @@
                                                 <div class="form-group">
                                                     <input id="form_number_footer" type="text" name="mobile" placeholder="Mobile Number" required="required" onblur="validateMobile_footer()">
                                                     <span id="mobile_error_footer" class="error-message"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input id="form_number" type="text" name="text" placeholder=" Alternate Mobile Number" required="required" onblur="validateMobile()">
+                                                    <span id="mobile_error" class="error-message"></span>
                                                 </div>
                                             </div>
                                     
@@ -1739,10 +1758,11 @@
                                             <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <select class="course-form" id="form_course_footer" name="course" required="required">
-                                                        <option selected value="FullStack" >FullStack</option>
-                                                        <option value="DigitalMarketing" >Digital Marketing</option>
-                                                        <option  value="DataAnalytics" >Data Analytics</option>
-                                                        <option value="MachineLearning" >Machine Learning</option>
+                                                        <!-- <option selected disabled style="color: black;">Program Type</option> -->
+                                                        <option value="FullStack" style="color: black;">FullStack</option>
+                                                        <option value="DigitalMarketing" style="color: black;">Digital Marketing</option>
+                                                        <option value="DataAnalytics" style="color: black;">Data Analytics</option>
+                                                        <option value="MachineLearning" style="color: black;">Machine Learning</option>
                                                     </select>
                                                     <span id="course_error_footer" class="error-message"></span>
                                                 </div>
@@ -1751,9 +1771,9 @@
                                             <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <select class="course-form" id="form_program_footer" name="program" required="required">
-                                                        <option value="6months" >6 months</option>
-                                                        <option value="3months" selected >3 months</option>
-                                                        <option value="45days" >45 days</option>
+                                                        
+                                                                <option value="6months" style="color: black;">4 months</option>
+                                                                <option value="3months" style="color: black;">3 months</option>
                                                     </select>
                                                     <span id="program_error_footer" class="error-message"></span>
                                                 </div>
@@ -1779,12 +1799,12 @@
                                 </div>
                             </div>
                             <div class="col-lg-5 offset-lg-1 " >
-                                <div class="sec-lg-head mb-20">
+                                <div class="sec-lg-head mb-60">
                                     <h2 class="fz-28 mt-30">Ready to level up your tech career...? </h2>
                                     <p class="fz-16 mt-20">  Let's connect for FullStack + DevOps Training with Hands-On Internship & Career Placement Support and take the next big step together!</p>
                                 </div>
                                 <div  >
-                                    <img src="./assets/imgs/marquee-images/websoc.ai-img2.jpg" alt="">
+                                    <img class="google" src="./assets/imgs/marquee-images/websoc.ai-img2.jpg" alt="">
                                 </div>
                             </div>
              
@@ -1899,6 +1919,14 @@
     <!-- custom scripts -->
     <script src="assets/js/scripts.js"></script>
     <script src="fsd-landing-page-footer.js"></script>
+
+
+    
+
+    
+
+
+    
 
     <script>
         function scrollToSection(sectionId) {

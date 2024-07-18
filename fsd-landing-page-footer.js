@@ -234,7 +234,7 @@ function submitFormFooter(event) {
 
     const apiUrl = "https://crmbackend.websoc.ai/content-manager/collection-types/application::lead.lead";
 
-    const bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzM3YTRlYTZlNmFiYzAzYmRkNTJjYyIsImlhdCI6MTcxODM2MjkwNSwiZXhwIjoxNzIwOTU0OTA1fQ.MMH0QQMZD-CUyDP6ss7RLQpsZ1e-6rrNXhuvVXlWmX4";
+    const bearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzM3YTRlYTZlNmFiYzAzYmRkNTJjYyIsImlhdCI6MTcyMTI5MzYyMSwiZXhwIjoxNzIzODg1NjIxfQ.u_1QG18oEy1y87zjRbXO-2nG4hDby7OdwNrJdmyqeKM";
 
     const fetchOptions = {
         method: 'POST',

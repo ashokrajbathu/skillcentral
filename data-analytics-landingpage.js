@@ -63,6 +63,7 @@ function submitForm() {
         .then(data => {
             console.log('Response:', data);
             // downloadPDFDataNavBar()
+            
             document.getElementById('contact-form').reset();
             redirectToThankYouPage(); // Redirect after successful form submission
         })

@@ -109,7 +109,7 @@ function submitForm() {
   
 
   function downloadPDFDataNavBar() {
-    const pdfUrl = 'assets/Brochure/SkillCentral Data Analyst Brochure (1).pdf';
+    const pdfUrl = 'assets/Brochure/SkillCentral Digital Marketing Brochure.pdf';
     const fileName = 'SkillCentral Data Analyst Brochure.pdf';
 
     const link = document.createElement('a');

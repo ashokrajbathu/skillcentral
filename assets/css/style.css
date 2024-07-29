@@ -1121,14 +1121,14 @@ img {
 
 .slide-har.st1 .box {
   position: relative;
-  -webkit-animation: slide-har 40s linear infinite;
+  -webkit-animation: slide-har 20s linear infinite;
   animation: slide-har 20s linear infinite;
 }
 
 .slide-har.st2 .box {
   position: relative;
   -webkit-animation: slide-har-revers 80s linear infinite;
-  animation: slide-har-revers 80s linear infinite;
+  animation: slide-har-revers 20s linear infinite;
 }
 
 @-webkit-keyframes slide-har {

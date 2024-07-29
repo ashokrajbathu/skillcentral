@@ -222,7 +222,7 @@ h6 {
 p {
   line-height: 1.8;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 600;
   color: #ddd;
   margin: 0;
 }
@@ -279,6 +279,7 @@ figure {
 
 .main-color3 {
   color: #55e6a5 !important;
+  padding-left: 220px;
 }
 
 .main-colorbg3 {
@@ -1115,12 +1116,13 @@ img {
 
 .slide-har {
   position: relative;
+  
 }
 
 .slide-har.st1 .box {
   position: relative;
-  -webkit-animation: slide-har 80s linear infinite;
-  animation: slide-har 80s linear infinite;
+  -webkit-animation: slide-har 40s linear infinite;
+  animation: slide-har 20s linear infinite;
 }
 
 .slide-har.st2 .box {
@@ -7643,7 +7645,7 @@ color: #55e6a5;
 
 .services .metro .items {
   list-style-type: none;
-  gap: 15px;
+  gap: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7664,14 +7666,14 @@ color: #55e6a5;
 
 
 .services .metro .items .item {
-  min-width: 400px;
+  min-width: 300px;
   background: #fff;
   cursor: -webkit-grab;
   cursor: grab;
   display: -ms-grid;
   display: grid;
   place-content: center;
-  padding: 80px 60px;
+  padding: 60px 40px;
 }
 
 .serv-box .curve {
@@ -7703,6 +7705,9 @@ color: #55e6a5;
    box-sizing: border-box;
    text-justify: auto;
    text-wrap: wrap;
+}
+.serv-box .serv-item:hover {
+  border-color: #55e6a5;
 }
 
 .serv-box .serv-item .arrow svg {
@@ -11219,9 +11224,12 @@ box-sizing: border-box !important;
   
   margin-left: 80px;
 }
+/* .courseup{
+  padding-left: 220px; */
+}
 @media(max-width: 480px) {
     .courseup{
-      padding-left :0px;
+      padding-left :170px;
       font-size: 20px;
     }
 
@@ -11380,4 +11388,3 @@ box-sizing: border-box !important;
 
  
 
-}

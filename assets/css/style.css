@@ -282,6 +282,13 @@ figure {
   padding-left: 220px;
 }
 
+.main-color5 {
+  color: #55e6a5 !important;
+}
+
+.main-color6 {
+  color: #ffffff !important;
+}
 .main-colorbg3 {
   background-color: #55e6a5;
 }
@@ -7708,6 +7715,13 @@ color: #55e6a5;
 }
 .serv-box .serv-item:hover {
   border-color: #55e6a5;
+}
+
+.course:hover {
+  border-color: #55e6a5;
+}
+.cert:hover{
+  color: #55e6a5;
 }
 
 .serv-box .serv-item .arrow svg {
